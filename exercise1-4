@@ -1,0 +1,7 @@
+$ docker run -it --name dependencies ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+$ docker start dependencies
+$ docker exec -it dependencies bash
+# apt update
+# apt install curl -y
+# exit
+$ docker exec -it dependencies sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
