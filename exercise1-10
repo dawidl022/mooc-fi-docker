@@ -1,0 +1,2 @@
+$ docker build . -t server-exp
+$ docker run -p 8080:8080 server-exp
